@@ -1,13 +1,22 @@
 <div>
-{% assign num=-909 %}
+{%  assign color = 'red' %} %}
+{{% if color =='red' %} 
+<p>colore is {{color}}== red</p>
+{% endif %}
+<p>color is {{color}}</p>
+{% else %}
+<p>colore is not {{color}}</p>
+{% endif %}
+ 
+  {% comment %}
+  {% assign num=-909 %}
 {% if  num > 100 %}
   <p>please and the currect number</p>
 {% elsif num < 0 %}
   <p>number not valid</p>
   {% endif %}
-  <h1>hellooooooooooooo</h1>
- 
-  {% comment %}
+  
+  ======================================
 {% assign num1=10 %}
  {% assign num2=5 %}
   <p>pluse {{ num1 | modulo:num2 }}</p>
