@@ -5,6 +5,22 @@
     padding: 10px;
   }
 </style>
+{% if section.settings.show_announcement %}
 <div id='myliq'>
   hello world
 </div>
+  {% endif %}
+{% schema  %} 
+ {
+    "name":"Announcements",
+    "settings":[
+      {
+  "type": "checkbox",
+  "id": "show_announcement",
+  "label": "Show announcement",
+  "default": false
+}
+    ]
+   
+  }
+{% endschema %}
