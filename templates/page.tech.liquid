@@ -1,14 +1,19 @@
 <div>
-  {% assign color = "red"  %}
-{% if color == 'red' %}
-  <p>color is red</p>
-  {% elsif color == 'grenn' %}
-    <p>color is Green</p>
-    {% else %}
-      <p>color is {{color}}</p>
-    
-    
-{% endif %}
+ {% assign color = "red"  %}
+  {%case color%}
+  {% when 'red' %}
+    <p>Red</p>
+    {%when 'green' %}
+      <p>Green</p>
+      {%when 'blue' %}
+        <p>Blue</p>
+        {%else%}
+        <p>No color</p>
+{% endcase %}}
+  {% comment %}
+  switch case
+  {% endcomment %}
+  
  
   {% comment %}
   {% assign num=-909 %}
