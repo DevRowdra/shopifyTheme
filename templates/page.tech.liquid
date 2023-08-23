@@ -1,15 +1,15 @@
 <div>
-  {% assign my_array = "one,two,three,four,five" | split: ',' %}
-
-  {% comment %}
-    This is a comment block.
-    You can put any notes or comments here.
-    It won't be displayed in the final output.
-  {% endcomment %}
-  
-  {% for item in my_array %}
-    {{ item }}
-  {% endfor %}
+  {% assign color = "red"  %}
+{% if color == 'red' %}
+  <p>color is red</p>
+  {% elsif color == 'grenn' %}
+    <p>color is Green</p>
+    {% else %}
+      <p>color is {{color}}</p>
+    
+    
+{% endif %}
+ 
   {% comment %}
   {% assign num=-909 %}
 {% if  num > 100 %}
