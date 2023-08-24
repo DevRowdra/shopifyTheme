@@ -1,4 +1,15 @@
-<style></style>
+<style>
+  #myliquid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+</style>
 <div id='myliquid'>
   <div id='myliq'>
     hello 
@@ -6,9 +17,32 @@
 </div>
 
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+ {
+  "name": "Announcement Bar",
+  "settings": [],
+  "max_blocks": 5,
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "announcement",
+      "settings": [
+        {
+          "type": "text",
+          "id": "body_text", 
+          "label": "Announcement Text",
+          "default": "Free free shipping over 50$" 
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "announcement"
+      }
+    ]
   }
+}
+
 {% endschema %}
 
