@@ -1,6 +1,6 @@
 <style>
   #myliq{
-   background-color:{{ section.settings.bg_color }};
+   background-color:{{ section.settings.background }};
     margin: 10px;
     padding: {{ section.settings.padding_size }}px;
    text-align:center;
@@ -56,11 +56,12 @@
   "default": "#000000"
 }
 ,{
-  "type": "color",
-  "id": "bg_color",
-  "label": "Backround color",
-  "default": "#000"
+  "type": "color_background",
+  "id": "background",
+  "label": "Background",
+  "default": "linear-gradient(#ffffff, #000000)"
 }
+
 
     ]
    
