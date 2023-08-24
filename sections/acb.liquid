@@ -18,10 +18,13 @@
   <div>
     {{ section.settings.custom_html }}
   </div>
-  <div>
-   <img src="{{ section.settings.image_with_text_image | asset_url:'300px' }}" height='300px' width='300px' loading='eager' alt="img" />
+ {% assign selected_image = section.settings.image_with_text_image | asset_url:'300px' %}
+{% if selected_image %}
+  <img src="{{ selected_image }}" height='300px' width='300px' loading='eager' alt="img" />
+{% else %}
+  <img src="/path-to-default-image.jpg" height='300px' width='300px' loading='eager' alt="Default Image" />
+{% endif %}
 
-  </div>
 {% schema  %} 
  {
     "name":"Announcements",
