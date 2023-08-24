@@ -15,6 +15,9 @@
   {{ section.settings.a_text }}
 </div>
   {% endif %}
+  <div>
+    {{ section.settings.custom_html }}
+  </div>
 {% schema  %} 
  {
     "name":"Announcements",
@@ -79,7 +82,12 @@
     }
   ],
   "default": "left"
+},{
+  "type": "html",
+  "id": "custom_html",
+  "label": "Writte here your html code"
 }
+
 
 
 
