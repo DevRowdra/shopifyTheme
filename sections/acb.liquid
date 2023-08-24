@@ -5,6 +5,7 @@
     padding: {{ section.settings.padding_size }}px;
    text-align:center;
     font-size: {{section.settings.font_size}}px
+    color:{{section.settings.font_color}}
  
 
   }
@@ -41,12 +42,18 @@
 },{
   "type": "range",
   "id": "padding_size",
-  "min": 12,
-  "max": 24,
+  "min": 5,
+  "max": 15,
   "step": 1,
   "unit": "px",
   "label": "Padding size",
-  "default": 16
+  "default": 10
+}
+,{
+  "type": "color",
+  "id": "font_color",
+  "label": "Body text",
+  "default": "#000000"
 }
 
     ]
