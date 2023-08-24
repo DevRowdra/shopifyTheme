@@ -2,7 +2,7 @@
   #myliq{
    background-color:red;
     margin: 10px;
-    padding: 10px;
+    padding: {{ section.settings.padding_size }}px;
    text-align:center;
     font-size: {{section.settings.font_size}}px
  
@@ -37,6 +37,15 @@
   "step": 1,
   "unit": "px",
   "label": "Font size",
+  "default": 16
+},{
+  "type": "range",
+  "id": "padding_size",
+  "min": 12,
+  "max": 24,
+  "step": 1,
+  "unit": "px",
+  "label": "Padding size",
   "default": 16
 }
 
