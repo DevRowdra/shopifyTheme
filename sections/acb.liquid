@@ -1,6 +1,6 @@
 <style>
   #myliq{
-   background-color:red;
+   background-color:{{ section.settings.bg_color }};
     margin: 10px;
     padding: {{ section.settings.padding_size }}px;
    text-align:center;
@@ -54,6 +54,12 @@
   "id": "font_color",
   "label": "Announcement text",
   "default": "#000000"
+}
+,{
+  "type": "color",
+  "id": "bg_color",
+  "label": "Backround color",
+  "default": "#000"
 }
 
     ]
