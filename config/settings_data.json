@@ -137,7 +137,8 @@
           "font_size": 16,
           "padding_size": 10,
           "font_color": "#000000",
-          "background": "radial-gradient(rgba(237, 211, 60, 1), rgba(0, 0, 0, 1) 73%)"
+          "background": "linear-gradient(57deg, rgba(249, 119, 255, 1) 8%, rgba(54, 212, 255, 1) 47%, rgba(43, 252, 135, 1) 83%)",
+          "text_aligment": "center"
         }
       }
     },
