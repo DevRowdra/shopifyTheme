@@ -3,7 +3,7 @@
    background:{{ section.settings.background }};
     margin: 10px;
     padding: {{ section.settings.padding_size }}px;
-   text-align:center;
+   text-align:{{ section.settings.text_aligment }};
     font-size: {{section.settings.font_size}}px;
     color:{{ section.settings.font_color }}
  
@@ -60,7 +60,23 @@
   "id": "background",
   "label": "Background",
   "default": "linear-gradient(#ffffff, #000000)"
+},{
+  "type": "select",
+  "id": "text_aligment",
+  "label": "text alignment",
+  "options": [
+    {
+      "value": "left",
+      "label": "Left"
+    },
+    {
+      "value": "centered",
+      "label": "Centered"
+    }
+  ],
+  "default": "left"
 }
+
 
 
     ]
