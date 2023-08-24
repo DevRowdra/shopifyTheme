@@ -19,7 +19,7 @@
     {{ section.settings.custom_html }}
   </div>
   <div>
- <img src="{{ section.settings.image_with_text_image | asset_url }}" alt="img" />
+ <img src="{{ section.settings.image_with_text_image | img_url:'small' }}" alt="img" />
 
   </div>
 {% schema  %} 
