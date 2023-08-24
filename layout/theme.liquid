@@ -278,6 +278,9 @@
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
     {%- endif -%}
+    {% if settings.my_text != blank %}
+      <div class="my-ab"{{ settings.my_text | downcase }}</div>
+      {% endif %}
 {% section 'acustom_ab' %}
     {% sections 'header-group' %}
 
