@@ -4,6 +4,7 @@
     margin: 10px;
     padding: 10px;
    text-align:center;
+    font-size: {{section.settings.font_size}}
  
 
   }
@@ -28,7 +29,17 @@
   "id": "a_text",
   "label": "Heading",
   "default": "Please enter a hading"
+},{
+  "type": "range",
+  "id": "font_size",
+  "min": 12,
+  "max": 24,
+  "step": 1,
+  "unit": "px",
+  "label": "Font size",
+  "default": 16
 }
+
     ]
    
   }
