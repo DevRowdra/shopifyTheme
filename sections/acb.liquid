@@ -18,6 +18,9 @@
   <div>
     {{ section.settings.custom_html }}
   </div>
+  <div>
+    {{ section.settings.image_with_text_image }}
+  </div>
 {% schema  %} 
  {
     "name":"Announcements",
@@ -86,7 +89,12 @@
   "type": "html",
   "id": "custom_html",
   "label": "Writte here your html code"
+},{
+  "type": "image_picker",
+  "id": "image_with_text_image",
+  "label": "Image"
 }
+
 
 
 
